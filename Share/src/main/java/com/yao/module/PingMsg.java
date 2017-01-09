@@ -1,8 +1,7 @@
 package com.yao.module;
 
-import io.netty.channel.ChannelHandlerContext;
-
 /**
+ * Created by yaozb on 15-4-11.
  * 心跳检测的消息类型
  */
 public class PingMsg extends BaseMsg {
@@ -10,10 +9,4 @@ public class PingMsg extends BaseMsg {
         super();
         setType(MsgType.PING);
     }
-
-	@Override
-	public void dealWithServerMsg(ChannelHandlerContext ctx) {
-		// TODO Auto-generated method stub
-		
-	}
 }

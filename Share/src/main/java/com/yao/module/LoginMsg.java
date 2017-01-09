@@ -1,7 +1,5 @@
 package com.yao.module;
 
-import io.netty.channel.ChannelHandlerContext;
-
 /**
  * Created by yaozb on 15-4-11.
  * 登录验证类型的消息
@@ -21,20 +19,12 @@ public class LoginMsg extends BaseMsg {
     public void setUserName(String userName) {
         this.userName = userName;
     }
-    
-	public String getPassword() {
-		return password;
-	}
 
-	public void setPassword(String password) {
-		this.password = password;
-	}
+    public String getPassword() {
+        return password;
+    }
 
-	@Override
-	public void dealWithServerMsg(ChannelHandlerContext ctx) {
-		// TODO Auto-generated method stub
-		
-	}
-
-
+    public void setPassword(String password) {
+        this.password = password;
+    }
 }

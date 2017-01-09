@@ -1,7 +1,5 @@
 package com.yao.module;
 
-import io.netty.channel.ChannelHandlerContext;
-
 /**
  * Created by yaozb on 15-4-11.
  */
@@ -19,10 +17,4 @@ public class ReplyMsg extends BaseMsg {
     public void setBody(ReplyBody body) {
         this.body = body;
     }
-
-	@Override
-	public void dealWithServerMsg(ChannelHandlerContext ctx) {
-		// TODO Auto-generated method stub
-		
-	}
 }

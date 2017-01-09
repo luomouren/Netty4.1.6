@@ -2,8 +2,6 @@ package com.yao.module;
 
 import java.io.Serializable;
 
-import io.netty.channel.ChannelHandlerContext;
-
 /**
  * Created by yaozb on 15-4-11.
  * 必须实现序列,serialVersionUID 一定要有
@@ -35,7 +33,4 @@ public abstract class BaseMsg  implements Serializable {
     public void setType(MsgType type) {
         this.type = type;
     }
-    
-    public abstract void dealWithServerMsg(ChannelHandlerContext ctx);
-
 }
